@@ -1,0 +1,68 @@
+.taskForm {
+    background-color: rgb(222, 211, 231);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px black;
+}
+
+.taskInput {
+    border: 1px gray solid;
+    border-radius: 5px;
+    width: 90%;
+    height: 25px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.taskInput:hover::placeholder {
+    padding-left: 10px;
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+}
+
+.taskInput:focus::placeholder {
+    opacity: 0;
+    transition: all 0.5s;
+} 
+
+.taskInput:focus:valid {
+    background-color: rgb(178, 218, 111);
+    transition: 1s ease;
+}
+
+.taskInput:focus:invalid {
+    background-color: rgb(255, 0, 0);
+    opacity: 0.3;
+    transition: 1s ease;
+    
+}
+
+.btnAddTodo {
+    width: 25%;
+    border-radius: 5px;
+    border: none;
+    margin-top: 15px;
+    padding: 10px 15px 10px 15px;
+    background-color: green;
+    color: white;
+    font-weight: 700;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+  }
+  
+  .btnAddTodo:active {
+    background-color: #185f03;
+    box-shadow: 0 5px #666; /*Diminui a sombra inferior*/
+    transform: translateY(4px); /*Muda a posição do elemento no eixo Y*/
+  }
+  
+  .btnAddTodo:hover {
+    filter:brightness(1.1)
+  }
